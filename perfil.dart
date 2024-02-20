@@ -4,11 +4,17 @@ void perfil(){
     int edad = 25;
     double altura = 1.80;
     bool esHm = true;
-
+    var exp=2;
+    var exp2=3;
+    int suma=exp+exp2;
     // Variables no definidas (dinámicas)
     dynamic ocupacion = "Estudiante de Ingenieria de Sistema";
     dynamic habilidades = ["Programacion Web", "Base de Datos", "Traductor"];
-
+    dynamic experienciaLaboral= suma; 
+    dynamic proyectosPersonales='3'; 
+    dynamic intereses='Viajar al extranjero'; 
+    dynamic educacion="9no semestre en ingenieria de sistemas"; 
+    dynamic redesSociales=2;
     // Variables definidas con datos predefinidos
     List<String> idiomas = ["Inglés", "Español"];
     Map<String, dynamic> proyectos = {
@@ -23,13 +29,17 @@ void perfil(){
     print("Es un Humano: $esHm");
     print("Ocupación: $ocupacion");
     print("Habilidades: $habilidades");
-
+    print("Experiencia Laboral en años: $experienciaLaboral"); 
+    print("Proyectos Personales: $proyectosPersonales"); 
+    print("Intereses: $intereses"); 
+    print("Educación: $educacion"); 
+    print("Redes Sociales: $redesSociales"); 
     print("\nIdiomas:");
     for (var idioma in idiomas) {
       print("- $idioma");
     }
 
-    print("\nProyectos: Como estudiante");
+    print("\nProyectos: ");
     proyectos.forEach((nombreProyecto, descripcion) {
       print("$nombreProyecto: $descripcion");
     });
